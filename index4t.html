@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js</title>
+</head>
+<body>
+	<style type="text/css">
+		body {
+			height: 400px;
+			background-image: url("https://c4.wallpaperflare.com/wallpaper/386/447/620/cuphead-cuphead-video-game-video-games-wallpaper-thumb.jpg");
+			background-size: cover;
+		}
+		p{
+			color: green;
+			font-size: 30px;
+		}
+		section {
+			display: flex;
+			justify-content: center;
+			height: 100%;
+			align-items: flex-end;
+		}
+		img{
+			width: 120px;
+			height: 120px;
+		}
+		.rimage1 {
+			display: none;
+			position: absolute;
+			right: 55%;
+			top: 20%;
+		}
+		.imagine2 {
+			display: none;
+			position: absolute;
+			right: 37%;
+			top: 20%;
+		}
+		.player {
+			border-style: dotted;
+			border-color: black;
+			width: 200px;
+			height: 310px;
+			margin: 25px;
+			background-color: red;
+			text-align: center;
+		}
+		.winner {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			font-family:  fantasy;
+			color: yellow;
+		}
+		#winf {
+			display: none;
+		}
+		#wins {
+			display: none;
+		}
+		#draw {
+			display: none;
+		}
+	</style>
+	</head>
+	<body>
+	<div id="winf" class="winner" align="center">
+		Player 1 Wins!
+	</div>
+	<div id="wins"  class="winner"  align="center">
+		Player 2 Wins!
+	</div>
+	<div   id="draw"  class="winner"  align="center">
+		Draw:(
+	</div>
+	<section>
+		<div class="player" id="play1">
+			<p>Player 1</p>
+			<div>
+				<img src="k1.png" id="11" class="rimage1">
+				<img src="2k.png" id="12" class="rimage1">
+				<img src="3k.png" id="13" class="rimage1">
+				<img src="4k.png" id="14" class="rimage1">
+				<img src="5k.png" id="15" class="rimage1">
+				<img src="6k.png" id="16" class="rimage1">
+			</div>
+		</div>
+		<div class="player" id="play2">
+			<p>Player 2</p>
+			<div>
+				<img src="k1.png" id="21" class="imagine2">
+				<img src="2k.png" id="22" class="imagine2">
+				<img src="3k.png" id="23" class="imagine2">
+				<img src="4k.png" id="24" class="imagine2">
+				<img src="5k.png" id="25" class="imagine2">
+				<img src="6k.png" id="26" class="imagine2">
+			</div>
+		</div>
+	</section>
+	<script src="4js.js"></script>
+	</body>
+	</html>
